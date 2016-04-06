@@ -1,0 +1,6 @@
+Les critères du jury :
+
+> Respect du brief initial
+> Qualité du design (en termes artistiques mais surtout ergonomiques)
+> Utilisation des technos vues précédemment (SASS, Bootstrap)
+> Propreté et maintenabilité du code et de la structure
