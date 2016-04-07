@@ -44,58 +44,76 @@ body {
 	font-family: $font-normal;
 }
 
+.navbar-inverse{
+	background-color:#353535;
 
-.navbar-header{
-	.navbar-brand{
-		height: auto;
-		padding:1px;
-		img{
-			width:100%;
+	.navbar-header{
+		.navbar-brand{
+			height: auto;
+			padding:1px;
+			img{
+				width:100%;
+			}
+
 		}
+		.navbar-toggle{
+			margin-top:15px;
+		}
+		.form-group{
+			padding-top:15px;
+			@include breakpoint(desktop){
+				padding-top:40px;
+			}
+			.form-control{
+				border-radius:0;
+			}
+		}
+	}
 
-	}
-	.navbar-toggle{
-		margin-top:15px;
-	}
-	.form-group{
-		padding-top:15px;
+	.navbar-collapse{
 		@include breakpoint(desktop){
 			padding-top:40px;
 		}
-		.form-control{
-			border-radius:0;
-		}
-	}
-}
-
-.navbar-collapse{
-	@include breakpoint(desktop){
-		padding-top:40px;
-	}
-	.navbar-nav{		
-		li{
-			padding-right: 10px;
-			a{
-				color:white;
-				font-weight: bold;
-				padding:5px 15px 5px 15px;
-			}
-			&:nth-child(1){
+		.navbar-nav{		
+			li{
+				float:right;
+				padding-right: 10px;
 				a{
-					background-color:$color-4;
+					color:white;
+					font-weight: bold;
+					padding:5px 15px 5px 15px;
+				}
+				&:nth-child(1){
+					a{
+						background-color:$color-4;
+					}
+					a:hover{
+						background-color:lighten($color-4,10%);
+					}
+				}
+				&:nth-child(2){
+					a{
+						background-color:$color-1;
+					}
+					a:hover{
+						background-color:darken($color-1,10%);
+					}
+				}
+				&:nth-child(3){
+					a{
+						color:darken(white,50%);
+					}
+					a:hover{
+						color:darken(white,20%);
+					}
 				}
 			}
-			&:nth-child(2){
+			.active{
 				a{
-					background-color:$color-1;
+					background:none;
 				}
 			}
 		}
-		.active{
-			a{
-				background:none;
-			}
-		}
-	}
 
+	}
 }

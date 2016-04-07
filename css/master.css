@@ -7355,48 +7355,63 @@ body {
   font-family: Tahoma, Arial, sans-serif;
 }
 
-.navbar-header .navbar-brand {
+.navbar-inverse {
+  background-color: #353535;
+}
+.navbar-inverse .navbar-header .navbar-brand {
   height: auto;
   padding: 1px;
 }
-.navbar-header .navbar-brand img {
+.navbar-inverse .navbar-header .navbar-brand img {
   width: 100%;
 }
-.navbar-header .navbar-toggle {
+.navbar-inverse .navbar-header .navbar-toggle {
   margin-top: 15px;
 }
-.navbar-header .form-group {
+.navbar-inverse .navbar-header .form-group {
   padding-top: 15px;
 }
 @media (min-width: 1025px) {
-  .navbar-header .form-group {
+  .navbar-inverse .navbar-header .form-group {
     padding-top: 40px;
   }
 }
-.navbar-header .form-group .form-control {
+.navbar-inverse .navbar-header .form-group .form-control {
   border-radius: 0;
 }
-
 @media (min-width: 1025px) {
-  .navbar-collapse {
+  .navbar-inverse .navbar-collapse {
     padding-top: 40px;
   }
 }
-.navbar-collapse .navbar-nav li {
+.navbar-inverse .navbar-collapse .navbar-nav li {
+  float: right;
   padding-right: 10px;
 }
-.navbar-collapse .navbar-nav li a {
+.navbar-inverse .navbar-collapse .navbar-nav li a {
   color: white;
   font-weight: bold;
   padding: 5px 15px 5px 15px;
 }
-.navbar-collapse .navbar-nav li:nth-child(1) a {
+.navbar-inverse .navbar-collapse .navbar-nav li:nth-child(1) a {
   background-color: #218380;
 }
-.navbar-collapse .navbar-nav li:nth-child(2) a {
+.navbar-inverse .navbar-collapse .navbar-nav li:nth-child(1) a:hover {
+  background-color: #2baca8;
+}
+.navbar-inverse .navbar-collapse .navbar-nav li:nth-child(2) a {
   background-color: #FFBC42;
 }
-.navbar-collapse .navbar-nav .active a {
+.navbar-inverse .navbar-collapse .navbar-nav li:nth-child(2) a:hover {
+  background-color: #ffaa0f;
+}
+.navbar-inverse .navbar-collapse .navbar-nav li:nth-child(3) a {
+  color: gray;
+}
+.navbar-inverse .navbar-collapse .navbar-nav li:nth-child(3) a:hover {
+  color: #cccccc;
+}
+.navbar-inverse .navbar-collapse .navbar-nav .active a {
   background: none;
 }
 
