@@ -1,2 +1,6 @@
 *.scssc
-/css
+<<<<<<< HEAD
+css/
+=======
+css/
+>>>>>>> nicolas
