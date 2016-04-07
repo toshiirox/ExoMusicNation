@@ -142,6 +142,7 @@ HEADER
 PLAYER
 ------------------------------------------------*/
 .block-player{
+	$cols:3;
 	font-family:$font-special-2;
 
 	position:fixed;
@@ -185,9 +186,14 @@ PLAYER
 			}
 
 		}
-
+		.block-2{
+			width:(100%/$cols);
+			margin-right:0;
+			display: inline-block;
+		}
 		.block-3{
-			width: 30%;
+			display: inline-block;
+			width:(100%/$cols);
 			left:0;
 			font-size: 0.75em;
 			padding:8px 5px 8px 5px;
@@ -198,13 +204,33 @@ PLAYER
 				color:lighten($color-4,10%);
 
 			}
+			@include breakpoint(desktop){
+				left:auto;
+				float:none;
+				padding:0;
+			}
 			.title{
 				a{
 					font-weight: bold;
 					font-size: 1.20em;
+					@include breakpoint(desktop){
+						font-weight: bold;
+						font-size: 1.20em;
+					}
+				}	
 
-				}
-			}	
+			}
+		}
+		.barre{
+			left:0;
+			margin:0;
+			padding:0;
+			bottom:98%;
+			position:absolute;
+			background-color:$color-2;
+			max-height: 3px;
+			float:left;
+			width: 70%;
 		}
 	}
 

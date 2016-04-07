@@ -7474,8 +7474,14 @@ PLAYER
     border-top: 10px solid #353535;
   }
 }
+.block-player .wrapper .block-2 {
+  width: 33.33333%;
+  margin-right: 0;
+  display: inline-block;
+}
 .block-player .wrapper .block-3 {
-  width: 30%;
+  display: inline-block;
+  width: 33.33333%;
   left: 0;
   font-size: 0.75em;
   padding: 8px 5px 8px 5px;
@@ -7486,9 +7492,33 @@ PLAYER
 .block-player .wrapper .block-3 a {
   color: #2baca8;
 }
+@media (min-width: 1025px) {
+  .block-player .wrapper .block-3 {
+    left: auto;
+    float: none;
+    padding: 0;
+  }
+}
 .block-player .wrapper .block-3 .title a {
   font-weight: bold;
   font-size: 1.20em;
+}
+@media (min-width: 1025px) {
+  .block-player .wrapper .block-3 .title a {
+    font-weight: bold;
+    font-size: 1.20em;
+  }
+}
+.block-player .wrapper .barre {
+  left: 0;
+  margin: 0;
+  padding: 0;
+  bottom: 98%;
+  position: absolute;
+  background-color: #D81159;
+  max-height: 3px;
+  float: left;
+  width: 70%;
 }
 
 /*------------------------------------------------
