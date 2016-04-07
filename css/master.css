@@ -7378,6 +7378,16 @@ body {
 }
 .navbar-inverse .navbar-header .form-group .form-control {
   border-radius: 0;
+  background-color: #5D5C5C;
+  color: white;
+  font-weight: bold;
+  border: 1px solid grey;
+}
+.navbar-inverse .navbar-header .form-group .form-control:focus {
+  background-color: #E0E0E0;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
 }
 @media (min-width: 1025px) {
   .navbar-inverse .navbar-collapse {
@@ -7395,21 +7405,23 @@ body {
 }
 .navbar-inverse .navbar-collapse .navbar-nav li:nth-child(1) a {
   background-color: #218380;
+  border: 2px solid #2baca8;
 }
 .navbar-inverse .navbar-collapse .navbar-nav li:nth-child(1) a:hover {
   background-color: #2baca8;
 }
 .navbar-inverse .navbar-collapse .navbar-nav li:nth-child(2) a {
   background-color: #FFBC42;
+  border: 2px solid #ffce75;
 }
 .navbar-inverse .navbar-collapse .navbar-nav li:nth-child(2) a:hover {
-  background-color: #ffaa0f;
+  background-color: #ffce75;
 }
 .navbar-inverse .navbar-collapse .navbar-nav li:nth-child(3) a {
-  color: gray;
+  color: #8F2D56;
 }
 .navbar-inverse .navbar-collapse .navbar-nav li:nth-child(3) a:hover {
-  color: #cccccc;
+  color: #ca5888;
 }
 .navbar-inverse .navbar-collapse .navbar-nav .active a {
   background: none;

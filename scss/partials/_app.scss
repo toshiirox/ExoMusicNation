@@ -66,6 +66,16 @@ body {
 			}
 			.form-control{
 				border-radius:0;
+				background-color:#5D5C5C;
+				color:white;
+				font-weight: bold;
+				border:1px solid grey;
+			}
+			.form-control:focus{
+				background-color:#E0E0E0;
+				color:white;
+				font-weight: bold;
+				border:1px solid white;
 			}
 		}
 	}
@@ -86,6 +96,8 @@ body {
 				&:nth-child(1){
 					a{
 						background-color:$color-4;
+						border:2px solid lighten($color-4,10%);
+
 					}
 					a:hover{
 						background-color:lighten($color-4,10%);
@@ -94,17 +106,20 @@ body {
 				&:nth-child(2){
 					a{
 						background-color:$color-1;
+						border:2px solid lighten($color-1,10%);
 					}
 					a:hover{
-						background-color:darken($color-1,10%);
+
+						background-color:lighten($color-1,10%);
 					}
 				}
 				&:nth-child(3){
 					a{
-						color:darken(white,50%);
+
+						color:$color-3;
 					}
 					a:hover{
-						color:darken(white,20%);
+						color:lighten($color-3,20%);
 					}
 				}
 			}
