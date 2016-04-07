@@ -7355,6 +7355,9 @@ body {
   font-family: Tahoma, Arial, sans-serif;
 }
 
+/*------------------------------------------------
+HEADER
+------------------------------------------------*/
 .navbar-inverse {
   background-color: #353535;
 }
@@ -7426,5 +7429,9 @@ body {
 .navbar-inverse .navbar-collapse .navbar-nav .active a {
   background: none;
 }
+
+/*------------------------------------------------
+
+------------------------------------------------*/
 
 /*# sourceMappingURL=master.css.map */
