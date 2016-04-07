@@ -1,0 +1,328 @@
+/*------------------------------------------------
+MISC
+------------------------------------------------*/
+.group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.img-fluid {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/*------------------------------------------------
+GLOBAL
+------------------------------------------------*/
+.block-zone {
+	padding: 0 $gutter-width;
+	
+	> .inner {
+		margin: 0 auto;
+		@extend .group;
+		.picture{
+			a{
+				img{
+					@extend .img-fluid;
+				}
+			}
+		}
+	}
+	@include breakpoint(desktop){
+		>.inner{
+			width:$global-width;
+		}
+	}
+
+}
+
+
+body {
+	padding-top: 50px;
+	background: url(#{$img-path}bg-1.png) repeat #fff;
+	font-family: $font-normal;
+}
+
+/*------------------------------------------------
+HEADER
+------------------------------------------------*/
+
+.navbar-inverse{
+	background-color:#353535;
+
+	.navbar-header{
+		.navbar-brand{
+			height: auto;
+			padding:1px;
+			img{
+				width:100%;
+			}
+
+		}
+		.navbar-toggle{
+			margin-top:15px;
+		}
+		.form-group{
+			padding-top:15px;
+			@include breakpoint(desktop){
+				padding-top:40px;
+			}
+			.form-control{
+				border-radius:0;
+				background-color:#5D5C5C;
+				color:white;
+				font-weight: bold;
+				border:1px solid grey;
+			}
+			.form-control:focus{
+				background-color:#E0E0E0;
+				color:white;
+				font-weight: bold;
+				border:1px solid white;
+			}
+			
+		}
+	}
+
+	.navbar-collapse{
+		@include breakpoint(desktop){
+			padding-top:40px;
+		}
+		.navbar-nav{		
+			li{
+				float:right;
+				padding-right: 10px;
+				a{
+					color:white;
+					font-weight: bold;
+					padding:5px 15px 5px 15px;
+				}
+				&:nth-child(1){
+					a{
+						background-color:$color-4;
+						border:2px solid lighten($color-4,10%);
+
+					}
+					a:hover{
+						background-color:lighten($color-4,10%);
+					}
+				}
+				&:nth-child(2){
+					a{
+						background-color:$color-1;
+						border:2px solid lighten($color-1,10%);
+					}
+					a:hover{
+
+						background-color:lighten($color-1,10%);
+					}
+				}
+				&:nth-child(3){
+					a{
+
+						color:$color-3;
+					}
+					a:hover{
+						color:lighten($color-3,20%);
+					}
+				}
+			}
+			.active{
+				a{
+					background:none;
+				}
+			}
+		}
+
+	}
+}
+
+/*------------------------------------------------
+PLAYER
+------------------------------------------------*/
+.block-player{
+	$cols:3;
+	font-family:$font-special-2;
+
+	position:fixed;
+	max-height:10%;
+	height:100%;
+	bottom:0;
+	background-color:#353535;
+	width:100%;
+	padding-left:0;
+	@include breakpoint(desktop){
+		max-height:7%;
+
+	}
+	.wrapper{
+		
+		.block-1{
+			max-width: 25%;
+			.picture{
+				display:none;
+				left:0;
+				margin:0;
+				padding:0;
+				width: 100%;
+				bottom:100%;
+				overflow: hidden;
+				
+
+				img{
+					max-height: 100%;
+					max-width: 100%;
+					position:50%;
+				}
+				@include breakpoint(desktop){
+					display:block;
+					position:absolute;					
+					width: auto;
+					border-right:10px solid #353535;
+					border-top:10px solid #353535;
+				}
+
+			}
+
+		}
+		.block-2{
+			width:50%;
+			height: 2em;
+			margin-right:0;
+			display: inline-block;
+			@include breakpoint(desktop){
+				width:(100%/$cols);
+			}
+			.controls{		
+				padding: 11px 0 5px 25px;			
+				list-style: none;
+				li{
+					float:left;
+					padding-right:15px;	
+					button{
+						display: inline-block;
+						border:none;
+						background:none;
+						color:$color-2;
+						vertical-align: -webkit-baseline-middle;
+						vertical-align: -moz-baseline-middle;
+						.glyphicon-play{
+							font-size: 2em;
+
+						}
+
+					}
+				}
+				@include breakpoint(desktop){
+					li{
+						button{
+							
+							vertical-align: -webkit-baseline-middle;
+							vertical-align: -moz-baseline-middle;
+							.glyphicon-play{
+								font-size: 2em;
+
+							}
+						}
+						button:hover{
+							color:lighten($color-2,20%);
+						}
+
+					}
+				}
+			}
+		}
+		.block-3{
+			display: inline-block;
+			width:(100%/$cols);
+			left:0;
+			font-size: 0.75em;
+			padding:5px 5px 8px 5px;
+			text-align: center;
+			float:left;
+			vertical-align: middle;
+			a{
+
+
+
+			}
+			@include breakpoint(desktop){
+				left:auto;
+				float:none;
+				padding:0;
+			}
+			.title{
+				a{
+					font-weight: bold;
+					font-size: 1.30em;
+					@include breakpoint(desktop){
+						font-weight: bold;
+						font-size: 1.70em;
+						text-decoration: none;
+						color:lighten($color-4,10%);
+					}
+
+				}
+				a:hover{
+					color:lighten($color-4,30%);
+
+				}
+			}
+			.album,.artist{
+				a{
+					color:lighten($color-4,10%);
+					font-size:1.3em;
+					text-decoration: none;
+				}
+				a:hover{
+					color:lighten($color-4,30%);
+
+				}
+			}
+			.album{
+				display:none;
+				@include breakpoint(desktop){
+					display:block;
+				}
+			}
+		}
+		.barre{
+			left:0;
+			margin:0;
+			padding:0;
+			bottom:98%;
+			position:absolute;
+			background-color:$color-2;
+			max-height: 3px;
+			float:left;
+			width: 70%;
+		}
+		.vol{
+			button{
+				display: inline-block;
+				border:none;
+				background:none;
+				color:$color-4;
+				vertical-align: -webkit-baseline-middle;
+				vertical-align: -moz-baseline-middle;
+				font-size: 1.5em;
+			}
+			float:right;
+			color:$color-1;
+			vertical-align: middle;
+			padding-top:15px;
+			
+		}
+	}
+
+}
+
+
+
+
+
+
+/*------------------------------------------------
+FOOTER
+------------------------------------------------*/
