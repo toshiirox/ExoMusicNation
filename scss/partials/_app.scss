@@ -1,7 +1,6 @@
 /*------------------------------------------------
 MISC
 ------------------------------------------------*/
-
 .group:after {
 	content: '';
 	display: table;
@@ -17,7 +16,6 @@ MISC
 GLOBAL
 ------------------------------------------------*/
 .block-zone {
-
 	padding: 0 $gutter-width;
 
 	> .inner {
@@ -72,11 +70,26 @@ body {
 
 .navbar-collapse{
 	@include breakpoint(desktop){
-		padding-top:30px;
+		padding-top:40px;
 	}
-	.navbar-nav{
-		li:nth-child(1){
-			background-color:$color-1;
+	.navbar-nav{		
+		li{
+			padding-right: 10px;
+			a{
+				color:white;
+				font-weight: bold;
+				padding:5px 15px 5px 15px;
+			}
+			&:nth-child(1){
+				a{
+					background-color:$color-4;
+				}
+			}
+			&:nth-child(2){
+				a{
+					background-color:$color-1;
+				}
+			}
 		}
 		.active{
 			a{
