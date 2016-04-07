@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*------------------------------------------------
 MISC
 ------------------------------------------------*/
@@ -372,13 +373,234 @@ PLAYER
 		}
 	}
 
+=======
+
+
+
+/*============= Nicolas ==========*/
+
+.clear{
+	clear: both;
+}
+
+.block-center{
+	$width-col:100%;
+	
+	width:$width-col;
+	
+	.content-artiste{
+		padding:10px;
+	}
+	
+	
+	.head-artiste{
+		$height-name:250px;
+		height:$height-name;
+		position:relative;
+		overflow:hidden;
+		
+		img{
+			position:absolute;
+			z-index:3;
+			min-height:$height-name;
+			width:100%;
+		}
+		
+		.title-artiste{
+			width:100%;
+			background-color:rgba(black,0.3);
+			position:absolute;
+			bottom:0;
+			margin:0;
+			padding:5px 15px;
+			font-size:24pt;
+			z-index:4;
+			color:#FFFFFF;
+			text-transform:uppercase;
+			text-shadow: 0px 0px 5px #000000;
+			font-family:$font-special-2;
+		}
+	}
+	
+	.search-bar-artiste{
+		margin-bottom:20px;
+		.input-group-addon {
+			border-radius:0;
+			background-color:$color-3;
+			border: 1px solid $color-3;
+			a{
+				color:#FFFFFF;
+				&:hover{
+					color:$color-1;
+				}
+			}
+		}
+		
+		.form-control{
+			border-radius:0;
+			border: 1px solid $color-3;
+		}
+	}
+	
+	.block-new{
+		padding-bottom:20px;
+		
+		.title-block{
+			margin:0;
+			margin-bottom:10px;
+			background-color:$color-4;
+			color:#FFFFFF;
+			text-align:center;
+			text-transform:uppercase;
+			font-family:$font-special-1;
+			font-size:16pt;
+			padding:5px;
+			
+		}
+		
+		.display-album{
+			border-left:2px solid $color-4;
+			.head-album{
+				$height:80px;
+				height:$height;
+				
+				.title-album{
+					margin:0;
+					font-family:$font-special-2;
+					line-height:$height;
+				}
+				
+				img{
+					height:$height;
+					width:$height;
+					float:left;
+					margin-right:10px;
+				}
+				
+			}
+			
+			.list-title-album{
+				text-align:center;
+				.song{
+					.title-song{
+						text-align:left;
+					}
+					
+					.icon-play{
+						a{
+							color:$color-4;
+							font-size:12pt;
+							&:hover{
+								color:$color-2;
+							}
+						}
+					}
+					
+					.notation-song{
+						a{
+							span{
+								margin-left:6px;
+							}
+							color:$color-5;
+							& .glyphicon-heart:hover{
+								color:$color-2;
+							}
+							& .glyphicon-plus:hover{
+								color:$color-1;
+							}
+						}
+						a:last-of-type{
+							margin-left:0;
+						}
+					}
+					
+				}
+			}
+			
+			.info-more{
+				border-bottom: 0px solid $color-4;
+				text-decoration:none;
+				text-transform:uppercase;
+				-webkit-transition: background-color 0.2s,color 0.2s;
+				-moz-transition: background-color 0.2s, color 0.2s;
+				transition: background-color 0.2s color 0.2s;
+				background-color:#FFFFFF;
+				&:hover{
+					background-color:$color-2;
+					color:#FFFFFF;
+				}
+			}
+		}
+		
+		
+	}
+	
+	.block-albums{
+		$width:120px;
+		
+		.title-rubrique-album{
+			font-family:$font-special-2;
+			font-weight:bold;
+			color:$color-3;
+			margin-top:0;
+			
+		}
+		
+		.albums{
+			float:left;
+			width:$width;
+			background-color:$color-3;
+			margin-left:10px;
+			margin-bottom:10px;
+			
+			.picture-albums{
+				width:$width;
+				height:$width;
+				img{
+					position:absolute;
+					width:$width;
+					height:$width;
+				}
+				.glyphicon-play{
+					display:none;
+					color:$color-2;
+					$sizeFont:60px;
+					text-shadow: 0px 0px 5px #000000;
+					font-size:$sizeFont;
+					top:($width/2)-($sizeFont/2);
+					left:($width/2)-($sizeFont/2);
+				}
+				&:hover .glyphicon-play{
+						display:inline-block;
+					}
+			}
+			
+			.title-albums{
+				color:#FFFFFF;
+				font-family:$font-special-2;
+				padding:0 10px;
+				font-size:10pt;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		
+		}
+	}
+	
+	
+>>>>>>> nicolas
 }
 
 
 
 
+<<<<<<< HEAD
 
 
 /*------------------------------------------------
 FOOTER
 ------------------------------------------------*/
+=======
+/*=================================*/
+>>>>>>> nicolas
