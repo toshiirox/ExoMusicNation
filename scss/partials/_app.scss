@@ -5,13 +5,13 @@
 
 
 .block-center{
-	$width-col:800px;
+	$width-col:550px;
 	
 	width:$width-col;
 	
 	
 	.head-artiste{
-		$height-name:200px;
+		$height-name:250px;
 		height:$height-name;
 		position:relative;
 		overflow:hidden;
@@ -22,9 +22,13 @@
 		}
 		
 		.title-artiste{
+			width:100%;
+			background-color:rgba(black,0.3);
+			padding:10px;
 			position:absolute;
 			bottom:0;
-			left:10px;
+			margin:0;
+			font-size:16pt;
 			z-index:4;
 			color:#FFFFFF;
 			text-transform:uppercase;
