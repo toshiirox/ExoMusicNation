@@ -1,0 +1,63 @@
+.playlist {
+    color: $color-5;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 13px 0 0 15px;
+}
+
+.fond_play {
+    background-color:$color-4;
+    width: 269px;
+    height: 55px;
+}
+
+.favoris {
+    color: $color-5;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 13px 0 0 15px;
+}
+
+.fond_fav {
+    background-color:$color-2;
+    width: 269px;
+    height: 55px;
+}
+
+.list-play, .list-fav{
+    li {
+        list-style: none;
+        }
+    a {
+        color: $color-6;
+    }
+}
+
+.footer {
+    background-color:$color-6;
+}
+
+
+
+.reseaux {
+    li{
+        list-style: none;
+        float:left;
+    }
+}
+
+.copyright {
+    li{
+        list-style: none;
+        display: inline;
+        
+    }
+}
+
+.block-zone {
+    background-color: rgba(142, 142, 142, 0.45);
+}
+
+
