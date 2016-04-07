@@ -74,5 +74,15 @@ body {
 	@include breakpoint(desktop){
 		padding-top:30px;
 	}
+	.navbar-nav{
+		li:nth-child(1){
+			background-color:$color-1;
+		}
+		.active{
+			a{
+				background:none;
+			}
+		}
+	}
 
 }

@@ -7382,5 +7382,11 @@ body {
     padding-top: 30px;
   }
 }
+.navbar-collapse .navbar-nav li:nth-child(1) {
+  background-color: #FFBC42;
+}
+.navbar-collapse .navbar-nav .active a {
+  background: none;
+}
 
 /*# sourceMappingURL=master.css.map */
