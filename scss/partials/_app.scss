@@ -1,0 +1,78 @@
+/*------------------------------------------------
+MISC
+------------------------------------------------*/
+
+.group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.img-fluid {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/*------------------------------------------------
+GLOBAL
+------------------------------------------------*/
+.block-zone {
+
+	padding: 0 $gutter-width;
+
+	> .inner {
+		margin: 0 auto;
+		@extend .group;
+		.picture{
+			a{
+				img{
+					@extend .img-fluid;
+				}
+			}
+		}
+	}
+	@include breakpoint(desktop){
+		>.inner{
+			width:$global-width;
+		}
+	}
+
+}
+
+
+body {
+	padding-top: 50px;
+	background: url(#{$img-path}bg-1.png) repeat #fff;
+	font-family: $font-normal;
+}
+
+
+.navbar-header{
+	.navbar-brand{
+		height: auto;
+		padding:1px;
+		img{
+			width:100%;
+		}
+
+	}
+	.navbar-toggle{
+		margin-top:15px;
+	}
+	.form-group{
+		padding-top:15px;
+		@include breakpoint(desktop){
+			padding-top:40px;
+		}
+		.form-control{
+			border-radius:0;
+		}
+	}
+}
+
+.navbar-collapse{
+	@include breakpoint(desktop){
+		padding-top:30px;
+	}
+
+}

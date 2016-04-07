@@ -13,52 +13,50 @@
 	<link rel="stylesheet" href="css/master.css">
 
 
+
 </head>
 
 <body>
-	<header class="block-header">
-		<div class="inner">
-			<div class="logo">
-				<div class="picture">
-					<a href="#" class="logo"></a>
+	
+	<header class="block-zone block-header">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header col-md-9">
+					<a class="navbar-brand col-xs-3" href="#"><img src="images/logo-2.png" alt="Music Nation"></a>
+					<div class="form-group col-xs-6 col-md-9">
+						<input type="text" class="form-control" placeholder="Rechercher">
+					</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-			</div>
-			<div class="search">
-				<input type="text">
-			</div>
-			<div class="account">
-				<div class="register">
-					<a href="#">
-						Inscription
-					</a>
-				</div>
-				<div class="connect">
-					<a href="#">
-						Connexion
-					</a>
-				</div>
-				<div class="other">
-					<a href="" class="help">
-						Aide
-					</a>
-				</div>
+				<div class="collapse navbar-collapse col-md-3">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Connexion</a></li>
+						<li><a href="#about">Inscription</a></li>
+						<li><a href="#contact">Aide</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
 			</div>
 		</div>
+		
 		
 	</header>
 
 	<main class="content">
-		<section class="block-menu">
+		<section class="block-zone block-menu">
 		</section>
 		
-		<section class="block-center">
+		<section class="block-zone block-center">
 			
 			<div class="head-artiste">
 				<img src=""/>
 				<h2 class="title-artiste">Gilbert Montagnier</h2>	
 			</div>
 			
-			<div class="block-new">
+			<div class="block-zone block-new">
 				<div class="head-album">
 					<div class="picture-album"></div>
 					<h2 class="title-album"></h2>
@@ -71,7 +69,7 @@
 				</div>
 			</div>
 			
-			<div class="block-album">
+			<div class="block-zone block-album">
 				<div class="row">
 					<div class="col-xs-6 col-md-3">
 						<a href="#" class="thumbnail">
@@ -83,7 +81,7 @@
 			
 		</section>
 		
-		<section class="block-aside">
+		<section class="block-zone block-aside">
 			<div class="inner">
 				<div class="wrapper">
 					<h2 class="title">Titres Populaires</h2>
@@ -111,7 +109,7 @@
 		</section>
 	</main>
 	
-	<div class="block-player">
+	<div class="block-zone block-player">
 		<div class="inner">
 			<div class="wrapper">
 				<div class="picture">
@@ -144,6 +142,9 @@
 			</div>
 		</div>
 	</div>
-	
+	<!-- SCRIPTS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- END SCRIPTS -->
 </body>
 </html>
