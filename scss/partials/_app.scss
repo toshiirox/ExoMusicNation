@@ -144,16 +144,15 @@ PLAYER
 .block-player{
 	$cols:3;
 	font-family:$font-special-2;
-
-	position:fixed;
 	max-height:10%;
+	position:fixed;
 	height:100%;
 	bottom:0;
 	background-color:#353535;
 	width:100%;
 	padding-left:0;
 	@include breakpoint(desktop){
-		max-height:7%;
+		max-height:80px;
 
 	}
 	.wrapper{
