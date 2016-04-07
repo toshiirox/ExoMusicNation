@@ -7431,7 +7431,38 @@ HEADER
 }
 
 /*------------------------------------------------
+PLAYER
+------------------------------------------------*/
+.block-player {
+  position: fixed;
+  max-height: 10%;
+  height: 100%;
+  bottom: 0;
+  background-color: #353535;
+  width: 100%;
+  padding-left: 0;
+}
+@media (min-width: 1025px) {
+  .block-player {
+    max-height: 12%;
+  }
+}
+.block-player .wrapper .picture {
+  left: 0;
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.block-player .wrapper .picture img {
+  max-height: 100%;
+  max-width: 100%;
+  position: 50%;
+}
 
+/*------------------------------------------------
+FOOTER
 ------------------------------------------------*/
 
 /*# sourceMappingURL=master.css.map */

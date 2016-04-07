@@ -139,5 +139,40 @@ HEADER
 }
 
 /*------------------------------------------------
+PLAYER
+------------------------------------------------*/
+.block-player{
+	position:fixed;
+	max-height:10%;
+	height:100%;
+	bottom:0;
+	background-color:#353535;
+	width:100%;
+	padding-left:0;
+	@include breakpoint(desktop){
+		max-height:12%;
 
+	}
+	.wrapper{
+		
+		.picture{
+			left:0;
+			margin:0;
+			padding:0;
+			max-height: 100%;
+			max-width: 100%;
+			overflow: hidden;
+			img{
+				max-height: 100%;
+				max-width: 100%;
+				position:50%;
+			}
+		}
+	}
+}
+
+
+
+/*------------------------------------------------
+FOOTER
 ------------------------------------------------*/
