@@ -280,6 +280,12 @@ PLAYER
 
 				}
 			}
+			.album{
+				display:none;
+				@include breakpoint(desktop){
+					display:block;
+				}
+			}
 		}
 		.barre{
 			left:0;

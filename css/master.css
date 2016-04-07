@@ -7556,6 +7556,14 @@ PLAYER
 .block-player .wrapper .block-3 .album a:hover, .block-player .wrapper .block-3 .artist a:hover {
   color: #65d8d5;
 }
+.block-player .wrapper .block-3 .album {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .block-player .wrapper .block-3 .album {
+    display: block;
+  }
+}
 .block-player .wrapper .barre {
   left: 0;
   margin: 0;
