@@ -44,6 +44,13 @@ body {
 	font-family: $font-normal;
 }
 
+.content{
+	padding-top:20px;
+	@include breakpoint(desktop){
+		padding-top:50px;
+	}
+}
+
 /*------------------------------------------------
 HEADER
 ------------------------------------------------*/
@@ -139,6 +146,55 @@ HEADER
 }
 
 /*------------------------------------------------
+MENU
+------------------------------------------------*/
+
+.block-menu{
+	$width-col:270px;
+	float:left;
+	padding-left:0;
+	height:100%;
+	
+	.playlist {
+	    color: $color-5;
+	    font-weight: 700;
+	    text-align: left;
+	    text-transform: uppercase;
+	    padding: 13px 0 0 15px;
+	}
+	
+	.fond_play {
+	    background-color:$color-4;
+	    width: $width-col;
+	    height: 55px;
+	}
+	
+	.favoris {
+	    color: $color-5;
+	    font-weight: 700;
+	    text-align: left;
+	    text-transform: uppercase;
+	    padding: 13px 0 0 15px;
+	}
+	
+	.fond_fav {
+	    background-color:$color-2;
+	    width: $width-col;
+	    height: 55px;
+	}
+	
+	.list-play, .list-fav{
+	    li {
+	        list-style: none;
+	        }
+	    a {
+	        color: $color-6;
+	    }
+	}
+}
+
+
+/*------------------------------------------------
 PLAYER
 ------------------------------------------------*/
 .block-player{
@@ -158,6 +214,7 @@ PLAYER
 	.wrapper{
 		
 		.block-1{
+			display:none;
 			max-width: 25%;
 			.picture{
 				display:none;
