@@ -310,8 +310,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
@@ -7475,22 +7475,56 @@ PLAYER
   }
 }
 .block-player .wrapper .block-2 {
-  width: 33.33333%;
+  width: 50%;
+  height: 2em;
   margin-right: 0;
   display: inline-block;
+}
+@media (min-width: 1025px) {
+  .block-player .wrapper .block-2 {
+    width: 33.33333%;
+  }
+}
+.block-player .wrapper .block-2 .controls {
+  padding: 11px 0 5px 25px;
+  list-style: none;
+}
+.block-player .wrapper .block-2 .controls li {
+  float: left;
+  padding-right: 15px;
+}
+.block-player .wrapper .block-2 .controls li button {
+  display: inline-block;
+  border: none;
+  background: none;
+  color: #D81159;
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: -moz-baseline-middle;
+}
+.block-player .wrapper .block-2 .controls li button .glyphicon-play {
+  font-size: 2em;
+}
+@media (min-width: 1025px) {
+  .block-player .wrapper .block-2 .controls li button {
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-baseline-middle;
+  }
+  .block-player .wrapper .block-2 .controls li button .glyphicon-play {
+    font-size: 2em;
+  }
+  .block-player .wrapper .block-2 .controls li button:hover {
+    color: #f25d93;
+  }
 }
 .block-player .wrapper .block-3 {
   display: inline-block;
   width: 33.33333%;
   left: 0;
   font-size: 0.75em;
-  padding: 8px 5px 8px 5px;
+  padding: 5px 5px 8px 5px;
   text-align: center;
   float: left;
   vertical-align: middle;
-}
-.block-player .wrapper .block-3 a {
-  color: #2baca8;
 }
 @media (min-width: 1025px) {
   .block-player .wrapper .block-3 {
@@ -7501,13 +7535,26 @@ PLAYER
 }
 .block-player .wrapper .block-3 .title a {
   font-weight: bold;
-  font-size: 1.20em;
+  font-size: 1.30em;
 }
 @media (min-width: 1025px) {
   .block-player .wrapper .block-3 .title a {
     font-weight: bold;
-    font-size: 1.20em;
+    font-size: 1.70em;
+    text-decoration: none;
+    color: #2baca8;
   }
+}
+.block-player .wrapper .block-3 .title a:hover {
+  color: #65d8d5;
+}
+.block-player .wrapper .block-3 .album a, .block-player .wrapper .block-3 .artist a {
+  color: #2baca8;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+.block-player .wrapper .block-3 .album a:hover, .block-player .wrapper .block-3 .artist a:hover {
+  color: #65d8d5;
 }
 .block-player .wrapper .barre {
   left: 0;
@@ -7519,6 +7566,21 @@ PLAYER
   max-height: 3px;
   float: left;
   width: 70%;
+}
+.block-player .wrapper .vol {
+  float: right;
+  color: #FFBC42;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+.block-player .wrapper .vol button {
+  display: inline-block;
+  border: none;
+  background: none;
+  color: #218380;
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: -moz-baseline-middle;
+  font-size: 1.5em;
 }
 
 /*------------------------------------------------
