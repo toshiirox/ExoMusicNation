@@ -1,0 +1,42 @@
+
+
+
+/*============= Nicolas ==========*/
+
+
+.block-center{
+	$width-col:800px;
+	
+	width:$width-col;
+	
+	
+	.head-artiste{
+		$height-name:200px;
+		height:$height-name;
+		position:relative;
+		overflow:hidden;
+		
+		img{
+			position:absolute;
+			z-index:3;
+		}
+		
+		.title-artiste{
+			position:absolute;
+			bottom:0;
+			left:10px;
+			z-index:4;
+			color:#FFFFFF;
+			text-transform:uppercase;
+			text-shadow: 0px 0px 5px #000000;
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+/*=================================*/
