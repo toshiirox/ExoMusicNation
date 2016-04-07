@@ -31,7 +31,8 @@
 			position:absolute;
 			bottom:0;
 			margin:0;
-			font-size:16pt;
+			padding:5px 15px;
+			font-size:24pt;
 			z-index:4;
 			color:#FFFFFF;
 			text-transform:uppercase;
@@ -43,6 +44,7 @@
 	.search-bar-artiste{
 		margin-bottom:20px;
 		.input-group-addon {
+			color:#FFFFFF;
 			border-radius:0;
 			background-color:$color-3;
 			border: 1px solid $color-3;
@@ -55,8 +57,13 @@
 	}
 	
 	.block-new{
+	
+		margin-bottom:20px;
+		padding-bottom:20px;
+		
 		.title-block{
 			margin:0;
+			margin-bottom:10px;
 			background-color:$color-4;
 			color:#FFFFFF;
 			text-align:center;
@@ -66,6 +73,86 @@
 			padding:5px;
 			
 		}
+		
+		.display-album{
+			border-left:2px solid $color-4;
+			.head-album{
+				$height:80px;
+				height:$height;
+				
+				.title-album{
+					margin:0;
+					font-family:$font-special-2;
+					line-height:$height;
+				}
+				
+				img{
+					height:$height;
+					width:$height;
+					float:left;
+					margin-right:10px;
+				}
+				
+			}
+			
+			.list-title-album{
+				text-align:center;
+				.song{
+					.title-song{
+						text-align:left;
+					}
+					
+					.icon-play{
+						a{
+							color:$color-4;
+							font-size:12pt;
+							&:hover{
+								color:$color-2;
+							}
+						}
+					}
+					
+					.notation-song{
+						a{
+							span{
+								margin-left:6px;
+							}
+							color:$color-5;
+							& .glyphicon-heart:hover{
+								color:$color-2;
+							}
+							& .glyphicon-plus:hover{
+								color:$color-1;
+							}
+						}
+						a:last-of-type{
+							margin-left:0;
+						}
+					}
+					
+				}
+			}
+			
+			.info-more{
+				border-bottom: 0px solid $color-4;
+				text-decoration:none;
+				text-transform:uppercase;
+				-webkit-transition: background-color 0.2s,color 0.2s;
+				-moz-transition: background-color 0.2s, color 0.2s;
+				transition: background-color 0.2s color 0.2s;
+				background-color:#FFFFFF;
+				&:hover{
+					background-color:$color-2;
+					color:#FFFFFF;
+				}
+			}
+		}
+		
+		
+	}
+	
+	.block-album{
+		
 	}
 	
 	
