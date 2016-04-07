@@ -7444,21 +7444,32 @@ PLAYER
 }
 @media (min-width: 1025px) {
   .block-player {
-    max-height: 12%;
+    max-height: 7%;
   }
 }
-.block-player .wrapper .picture {
+.block-player .wrapper .block-1 {
+  max-width: 25%;
+}
+.block-player .wrapper .block-1 .picture {
   left: 0;
   margin: 0;
   padding: 0;
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
+  bottom: 100%;
   overflow: hidden;
 }
-.block-player .wrapper .picture img {
+.block-player .wrapper .block-1 .picture img {
   max-height: 100%;
   max-width: 100%;
   position: 50%;
+}
+@media (min-width: 1025px) {
+  .block-player .wrapper .block-1 .picture {
+    position: absolute;
+    width: auto;
+    border-right: 10px solid #353535;
+    border-top: 10px solid #353535;
+  }
 }
 
 /*------------------------------------------------

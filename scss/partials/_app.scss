@@ -150,26 +150,45 @@ PLAYER
 	width:100%;
 	padding-left:0;
 	@include breakpoint(desktop){
-		max-height:12%;
+		max-height:7%;
 
 	}
 	.wrapper{
 		
-		.picture{
-			left:0;
-			margin:0;
-			padding:0;
-			max-height: 100%;
-			max-width: 100%;
-			overflow: hidden;
-			img{
-				max-height: 100%;
-				max-width: 100%;
-				position:50%;
+		.block-1{
+			max-width: 25%;
+			.picture{
+
+				left:0;
+				margin:0;
+				padding:0;
+				width: 100%;
+				bottom:100%;
+				overflow: hidden;
+				
+
+				img{
+					max-height: 100%;
+					max-width: 100%;
+					position:50%;
+				}
+				@include breakpoint(desktop){
+
+					position:absolute;					
+					width: auto;
+					border-right:10px solid #353535;
+					border-top:10px solid #353535;
+				}
+
 			}
+
 		}
 	}
+
 }
+
+
+
 
 
 
