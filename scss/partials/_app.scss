@@ -17,7 +17,7 @@ GLOBAL
 ------------------------------------------------*/
 .block-zone {
 	padding: 0 $gutter-width;
-
+	
 	> .inner {
 		margin: 0 auto;
 		@extend .group;
@@ -142,6 +142,8 @@ HEADER
 PLAYER
 ------------------------------------------------*/
 .block-player{
+	font-family:$font-special-2;
+
 	position:fixed;
 	max-height:10%;
 	height:100%;
@@ -158,7 +160,7 @@ PLAYER
 		.block-1{
 			max-width: 25%;
 			.picture{
-
+				display:none;
 				left:0;
 				margin:0;
 				padding:0;
@@ -173,7 +175,7 @@ PLAYER
 					position:50%;
 				}
 				@include breakpoint(desktop){
-
+					display:block;
 					position:absolute;					
 					width: auto;
 					border-right:10px solid #353535;
@@ -182,6 +184,27 @@ PLAYER
 
 			}
 
+		}
+
+		.block-3{
+			width: 30%;
+			left:0;
+			font-size: 0.75em;
+			padding:8px 5px 8px 5px;
+			text-align: center;
+			float:left;
+			vertical-align: middle;
+			a{
+				color:lighten($color-4,10%);
+
+			}
+			.title{
+				a{
+					font-weight: bold;
+					font-size: 1.20em;
+
+				}
+			}	
 		}
 	}
 

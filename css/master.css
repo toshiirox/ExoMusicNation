@@ -7434,6 +7434,7 @@ HEADER
 PLAYER
 ------------------------------------------------*/
 .block-player {
+  font-family: "Catamaran", Tahoma, sans-serif;
   position: fixed;
   max-height: 10%;
   height: 100%;
@@ -7451,6 +7452,7 @@ PLAYER
   max-width: 25%;
 }
 .block-player .wrapper .block-1 .picture {
+  display: none;
   left: 0;
   margin: 0;
   padding: 0;
@@ -7465,11 +7467,28 @@ PLAYER
 }
 @media (min-width: 1025px) {
   .block-player .wrapper .block-1 .picture {
+    display: block;
     position: absolute;
     width: auto;
     border-right: 10px solid #353535;
     border-top: 10px solid #353535;
   }
+}
+.block-player .wrapper .block-3 {
+  width: 30%;
+  left: 0;
+  font-size: 0.75em;
+  padding: 8px 5px 8px 5px;
+  text-align: center;
+  float: left;
+  vertical-align: middle;
+}
+.block-player .wrapper .block-3 a {
+  color: #2baca8;
+}
+.block-player .wrapper .block-3 .title a {
+  font-weight: bold;
+  font-size: 1.20em;
 }
 
 /*------------------------------------------------
