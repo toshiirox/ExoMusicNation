@@ -9,13 +9,16 @@
 	
 	width:$width-col;
 	
+	.content-artiste{
+		padding:10px;
+	}
+	
 	
 	.head-artiste{
 		$height-name:250px;
 		height:$height-name;
 		position:relative;
 		overflow:hidden;
-		margin-bottom:10px;
 		
 		img{
 			position:absolute;
@@ -25,7 +28,6 @@
 		.title-artiste{
 			width:100%;
 			background-color:rgba(black,0.3);
-			padding:10px;
 			position:absolute;
 			bottom:0;
 			margin:0;
@@ -34,11 +36,12 @@
 			color:#FFFFFF;
 			text-transform:uppercase;
 			text-shadow: 0px 0px 5px #000000;
+			font-family:$font-special-2;
 		}
 	}
 	
 	.search-bar-artiste{
-		padding:0 10px;
+		margin-bottom:20px;
 		.input-group-addon {
 			border-radius:0;
 			background-color:$color-3;
@@ -51,6 +54,19 @@
 		}
 	}
 	
+	.block-new{
+		.title-block{
+			margin:0;
+			background-color:$color-4;
+			color:#FFFFFF;
+			text-align:center;
+			text-transform:uppercase;
+			font-family:$font-special-1;
+			font-size:16pt;
+			padding:5px;
+			
+		}
+	}
 	
 	
 }
